@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./progressBar.css">
+</head>
+<body>
+	<!-- 预加载图片 -->
+<div id="loader">
+    <h1 class="loadlogo">
+    	<!-- 这儿可以放置一个logo图片 -->
+        <!-- <img src="" alt=""> -->
+    </h1>
+    <!-- progress-bar是进度条-->
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+    <!-- percent-count是百分比-->
+    <div class="percent-count" id="countText">0%</div>
+    <!-- 引入jquery和进度条的js -->
+    </div>
+    <div class="sudoku">
+		这里面放置的是进度条加载完成之后页面展示出来的内容<br>
+		比如想要放meimei（下载的文件中已经给你准备了几张美照哦！）的照片啦！还有酷酷的动画内容
+
+    </div>
+
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./progressBar.js"></script>
+    <script>
+    $(function(){
+    	let preloadImg=["./img/link (5).jpg"] //preloadImg中放置你需要加载的所有的图片的路径
+    	$.progressBar(preloadImg);
+    	
+    })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body ,html{
+  width:100%;
+  height:100%;
+  margin:0;
+}
+#loader {
+  width: 100%;
+  height:100%;
+} 
+.percent-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  color: #ff8d8c;
+}
+.progress-bar {
+  background: #e6eeff;
+  width: 220px;
+  height: 10px;
+  border-radius: 50px;
+  margin: auto;
+  overflow: hidden;
+}
+.progress-bar .progress {
+  background-image: -webkit-gradient(linear, left top, right top, from(#8aaaff), to(#fa8cff));
+  background-image: linear-gradient(90deg, #ea0707, #f94735);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  transition:width .2s linear;
+}
+.loadlogo{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-top:65%;
+  color:#5957defa;
+  font-size:180px;
+}
+.loadlogo img{
+  width:60px;
+  height:60px;
+}
+.load-footer{
+  width:100%;
+  height:32px;
+  line-height:30px;
+  font-size:14px;
+  position:fixed;
+  left:0;
+  bottom:0;
+  font-family:"微软雅黑";
+   -webkit-font-smoothing: antialiased;
+}
+
+.sudoku{
+  display:none;
+}
+
